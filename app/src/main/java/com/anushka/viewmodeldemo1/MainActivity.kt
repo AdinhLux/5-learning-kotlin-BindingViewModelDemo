@@ -21,9 +21,5 @@ class MainActivity : AppCompatActivity() {
         viewModel.count.observe(this, Observer {
           binding.countText.text = it.toString()
         })
-
-        binding.button.setOnClickListener {
-           viewModel.updateCount()
-        }
     }
 }
